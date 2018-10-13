@@ -1,0 +1,291 @@
+
+<html lang="en">
+
+<head>
+    <title> Assets List </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- bootstrap  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <style> 
+        
+ 
+#particles-jstwo {
+background-color: #0C0019;
+background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+a {
+text-decoration: none !important;
+}
+#text {
+border-radius: 50%;
+overflow: hidden;
+opacity: 0;
+transform: scale(0);
+-webkit-transition:all 0.1s ease-in-out;
+}
+
+#text h3 {
+ text-align: center;
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 20px;
+ margin: 50px 30px;
+ padding: 50px 0 0 0;
+ height: 100px;
+ text-shadow: 0 0 1px #fff,
+              0 1px 2px rgba(0,0,0,.3);
+
+}
+/* div.ex1 {
+    height: 600px;
+    overflow: scroll;
+} */
+
+div.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height:100% ;
+	width: 5px;
+	background: rgba(0,0,0,0.3);
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#rectangle::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#rectangle::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: rgb(10, 10, 10);
+}
+
+#rectangle::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+
+
+#rectangle {
+    background:  rgb(220,220,210,0.5);
+        border-radius: 25px;
+
+    width:70%;
+    margin-top:5%;
+    margin-bottom:3%;
+    margin-left: 15%;
+    padding-bottom:20px;
+    position: fixed;
+    }
+#bottom { padding-top :30px;}
+p{ padding-top: 20px; padding-bottom: 20px;}
+a{color: white;}
+.btn { margin-top: 30px;}
+table {
+width: 100%;
+table-layout: fixed;
+}
+
+.tbl-header {
+background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.tbl-content {
+height: 180px;
+overflow-x: auto;
+margin-top: 0px;
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+th {
+padding: 20px 30px;
+text-align: left;
+font-weight: 700;
+font-size: 15px;
+color: floralwhite;
+text-transform: uppercase;
+}
+
+td {
+
+
+text-align: left;
+vertical-align: middle;
+font-weight: 500;
+font-size: 12px;
+color: #fff;
+border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+body {
+background:#0C0019;
+font-family: 'Roboto', sans-serif;
+}
+section {
+margin: 50px;
+}
+h1 {
+
+font-size: 30px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 300;
+text-align: center;
+margin-bottom: 30px;
+margin-top:10px;
+font-family: 'Segoe UI';
+font-style: bold;
+}
+.form-group {font-family: Oswald ;margin-top: 0px; margin-right: 100px; margin-left: 100px;}
+label { color: #fff; font-weight:600;}
+input {
+background:  #25c481, #25b7c4;
+top: 5px;
+-webkit-box-shadow: 0 2px 10px 1px #25c481, #25b7c4;
+box-shadow: 0 2px 10px 1px #25c481, #25b7c4;
+margin-left:0px;
+
+
+}
+
+/* Asset List */
+.show {display: block;}
+* {box-sizing: border-box;}
+
+#myInput {
+    border-radius: 15px;
+
+width: 100%;
+font-size: 16px;
+padding: 12px 20px 12px 40px;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+}
+
+#myUL {
+    
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#myUL li a {
+    border-radius: 15px;
+cursor : pointer;
+border: 1px solid #ddd;
+margin-top: 2px; /* Prevent double borders */
+background-color: #f6f6f6;
+padding: 12px;
+text-decoration: none;
+font-size: 18px;
+color: black;
+display: block
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #eee;
+}
+
+h2 { text-align:center; color: white;}
+h3 { color: antiquewhite;}
+
+        
+    </style>
+    <div id="particles-jstwo">
+        <div id="rectangle"  class="scrollbar force-overflow">
+            <section>
+                <h2>BANGALORE OFFICE ASSETS</h2>
+                <h3>ADDRESS : </address></h3>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Assets.." >
+                <ul id="myUL">
+                  <!-- <%
+                      var i=0;
+                      while(assertrawb[i]){
+                      %> -->
+                  <div class="dropdown">
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > nazural</a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+                    <li ><a onclick="window.location.href='/assetdetails?address=<%=address%>&assetname=<%=assertrawb[i].name%>'" > <%=assertrawb[i].name%></a></li>
+
+
+                    </div>
+                <!-- <%
+                    i++
+                      }
+                    %> -->
+                  </ul>
+
+
+
+
+
+
+            </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"> </script>
+    <script>
+        particlesJS.load('particles-jstwo', 'particlestwo.json',
+            function () {
+                console.log('file loaded');
+            });
+
+
+
+            function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+
+    </script>
+
+
+</body>
+
+</html>
